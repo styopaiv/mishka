@@ -9,7 +9,6 @@
 <body>
 
   <header class='page-header'>
-    <h1 class='visually-hidden'>Мишка!</h1>
     <div class='page-header__logo'>
       <img src='http://placehold.it/150x100' alt='Mishka'>
     </div>
@@ -17,8 +16,10 @@
       <button class='main-nav__toggle' type='button'>Открыть меню</button>
       <div class='main-nav__wrapper'>
         <ul class='main-nav__items'>
-          <li class='main-nav__item main-nav__item--active'><a>Главная</a></li>
-          <!-- ... -->
+          <li class='main-nav__item'><a href='catalog.html'>Каталог товаров</a></li>
+          <li class='main-nav__item'><a href='#'>Вязание на заказ</li>
+          <li class='main-nav__item'><a href='#'>Поиск по сайту</li>
+          <li class='main-nav__item'><a href='#'>Корзина: пока пуста</li>
         </ul>
         <ul class='main-nav__user-items'>
           <li class='main-nav__user-item'><a class='main-nav__user-login' href='' title='Войти'>Вход</a></li>
@@ -42,7 +43,9 @@
     <section class='popular-product'>
       <h2 class='popular-product__title'>Вязаные корзинки</h2>
       <span>Товар недели</span>
-      <p class='popular-product__descr'></p>
+      <p class='popular-product__descr'>
+        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех рамзерах.
+      </p>
       <table class='popular-product__properties'>
         <tr>
           <td class='popular-product__property'>Цвет:</td>
@@ -57,9 +60,7 @@
           <td class='popular-product__value'>15 см</td>
         </tr>
       </table>
-      <div class='popular-product__pic'>
-        <img src='http://placehold.it/150x100' alt='Корзинка'>
-      </div>
+      <img class='popular-product__pic' src='http://placehold.it/150x100' alt='Корзинка'>
       <div class='popular-product__price'>
         <span>Цена: 990 руб.</span>
       </div>
@@ -68,14 +69,14 @@
 
     <section class='about-us'>
       <h2 class='about-us__title'>Коротко о нас</h2>
-      <div class='about-us__features'>
-        <h3 class='about-us__feature'>Экологически чистые материалы</h3>
-        <h3 class='about-us__feature'>Скандинавский стиль по российской цене</h3>
-        <h3 class='about-us__feature'>Увеличивает лайки на фотографиях</h3>
-        <h3 class='about-us__feature'>Связано вручную с любовью и умилением</h3>
-        <h3 class='about-us__feature'>Поддержка отечественного производителя</h3>
-        <h3 class='about-us__feature'>Поставляется в подарочной упаковке</h3>
-      </div>
+      <ul class='about-us__features'>
+        <li class='about-us__feature'>Экологически чистые материалы</li>
+        <li class='about-us__feature'>Скандинавский стиль по российской цене</li>
+        <li class='about-us__feature'>Увеличивает лайки на фотографиях</li>
+        <li class='about-us__feature'>Связано вручную с любовью и умилением</li>
+        <li class='about-us__feature'>Поддержка отечественного производителя</li>
+        <li class='about-us__feature'>Поставляется в подарочной упаковке</li>
+      </ul>
     </section>
 
     <section class='reviews'>
@@ -89,8 +90,8 @@
           <span class='reviews__author-nick'>@misssssiskras</span>
         </blockquote>
         <div class='reviews__controls'>
-          <button class='reviews__prev' type='button'>Предыдущий отзыв</button>
-          <button class='reviews__next' type='button'>Следующий отзыв</button>
+          <button class='reviews__controls reviews__controls--prev' type='button'>Предыдущий отзыв</button>
+          <button class='reviews__controls reviews__controls--next' type='button'>Следующий отзыв</button>
         </div>
         <a href='#' class='general-button'>Написать</a>
       </div>
@@ -101,16 +102,14 @@
       <table class='contacts__items'>
         <tr>
           <td class='contacts__field'>e-mail</td>
-          <td class='contacts__value'>info@mimimishkashop.ru</td>
+          <td class='contacts__value'><a href='#'>info@mimimishkashop.ru</a></td>
         </tr>
         <tr>
           <td class='contacts__field'>адрес</td>
           <td class='contacts__value'>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
         </tr>
       </table>
-      <div class='contacts__map'>
-        <img src='http://placehold.it/150x100' alt='Карта'>
-      </div>
+      <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZtPRR40" width="320" height="457" frameborder="0"></iframe>
       <a href='#' class='contacts__write-us  button'>Напишите нам</a>
     </section>
 
@@ -119,14 +118,14 @@
   <footer class='page-footer'>
     <div class='page-footer__social'>
       <div class='social-links'>
-        <a class='social-link social-link--vk' href='https://vk.com/htmlacademy'>Мы в Вконтакте</a>
-        <a class='social-link social-link--fb' href='https://www.facebook.com/htmlacademy'>Мы в Фейсбуке</a>
-        <a class='social-link social-link--in' href='https://www.instagram.com/htmlacademy'>Мы в Инстаграме</a>
+        <a class='social-links__item  social-links__item--vk' href='https://vk.com/htmlacademy'>Мы в Вконтакте</a>
+        <a class='social-links__item  social-links__item--fb' href='https://www.facebook.com/htmlacademy'>Мы в Фейсбуке</a>
+        <a class='social-links__item  social-links__item--in' href='https://www.instagram.com/htmlacademy'>Мы в Инстаграме</a>
       </div>
-      <p class='page-footer__copyright'>
+      <div class='page-footer__copyright'>
         Разработано:
         <a class='page-footer__copyright-logo' href='https://htmlacademy.ru/intensive/adaptive'>HTML Academy</a>
-      </p>
+      </div>
     </div>
   </footer>
 
