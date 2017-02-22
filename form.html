@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+  <meta charset='utf-8'>
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <main class='page-main'>
+
+    <section class='knitting-order'>
+      <h1 class='knitting-order__title'>Вязание на заказ</h1>
+      <p class='knitting-order__descr'>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <form action='https://echo.htmlacademy.ru'  method='post' class='form'>
+        <div class='form__item'>
+          <h2 class='form__title'>Тип</h2>
+          <label class='form__toggle'>
+                <input type='radio' name='type' value='accessory' checked>
+                <span>Аксессуар для интерьера</span>
+              </label>
+          <label class='form__toggle'>
+                <input type='radio' name='type' value='toy'>
+                <span>Детская игрушка</span>
+              </label>
+        </div>
+        <div class='form__item  form__item--color'>
+          <h2 class='form__title'>Цвет</h2>
+          <label class='form__checkbox'>
+            <input type='checkbox' name='white' checked>
+            <span>Белый</span>
+          </label>
+          <label class='form__checkbox'>
+            <input type='checkbox' name='grey' checked>
+            <span>Серый</span>
+          </label>
+          <label class='form__checkbox'>
+            <input type='checkbox' name='tiffany'>
+            <span>«Тиффани»</span>
+          </label>
+          <label class='form__checkbox'>
+            <input type='checkbox' name='black'>
+            <span>Черный</span>
+          </label>
+          <label class='form__checkbox'>
+            <input type='checkbox' name='pink'>
+            <span>Розовый</span>
+          </label>
+          <label class='form__checkbox'>
+            <input type='checkbox' name='orange'>
+            <span>Оранжевый</span>
+          </label>
+        </div>
+        <div class='form__item  form__item--name'>
+          <h2 class='form__title'>ФИО</h2>
+          <label class='form__name'>
+            <span>Имя:</span>
+            <input type='text' name='name' placeholder='Введите ваше имя*'>
+          </label>
+          <label class='form__name'>
+            <span>Фамилия:</span>
+            <input type='text' name='surname' placeholder='Укажите фамилию*'>
+          </label>
+          <label class='form__name'>
+            <span>Отчество:</span>
+            <input type='text' name='patronymic' placeholder='Отчество, если желаете*'>
+          </label>
+        </div>
+        <div class='form__item  form__item--phone'>
+          <h2 class='form__title'>ТЕЛ</h2>
+          <input type='text' name='phone' placeholder='+7 XXX XX XX*'>
+        </div>
+        <div class='form__item  form__item--email'>
+          <h2 class='form__title'>E-MAIL</h2>
+          <input type='text' name='email' placeholder='Ваш Email*'>
+        </div>
+        <div class='form__item  form__item--additional'>
+          <h2 class='form__title'>ДОП</h2>
+          <textarea placeholder='Опишите все ваши желания к заказу'></textarea>
+        </div>
+        <small class='form__legend'><sup>*</sup>Поля обязательны для заполнения</small>
+        <button type='submit' class='form__button  button'>Отправить заказ</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class='page-footer'>
+    <div class='page-footer__social'>
+      <div class='social-links'>
+        <a class='social-links__item  social-links__item--vk' href='https://vk.com/htmlacademy'>Мы в Вконтакте</a>
+        <a class='social-links__item  social-links__item--fb' href='https://www.facebook.com/htmlacademy'>Мы в Фейсбуке</a>
+        <a class='social-links__item  social-links__item--in' href='https://www.instagram.com/htmlacademy'>Мы в Инстаграме</a>
+      </div>
+      <div class='page-footer__copyright'>
+        Разработано:
+        <a class='page-footer__copyright-logo' href='https://htmlacademy.ru/intensive/adaptive'>HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
