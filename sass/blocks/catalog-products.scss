@@ -1,0 +1,31 @@
+.catalog-products {
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    width: 200px;
+    padding-left: 27px;
+    color: #444444;
+  }
+
+  &__title {
+    margin: 15px 0 0;
+    font-family: $opensans-b;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  &__properties {
+    font-family: $opensans;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__price {
+    padding: 24px 0 24px 27px;
+    font-family: $opensans-b;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

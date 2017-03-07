@@ -1,0 +1,18 @@
+.page-footer {
+  background: #f1f1f1;
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 22px;
+    font-family: $opensans-b;
+    font-size: 19px;
+    line-height: 18px;
+
+    span {
+      color: #000;
+      margin-right: 30px;
+    }
+  }
+}

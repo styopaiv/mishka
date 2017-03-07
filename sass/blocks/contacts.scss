@@ -1,0 +1,34 @@
+.contacts {
+  margin-bottom: 40px;
+
+  &__container {
+    width: 260px;
+    padding: 0 30px;
+  }
+
+  &__title {
+    font-family: $opensans-b;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__field {
+    width: 75px;
+    padding-top: 30px;
+    vertical-align: top;
+    text-align: top;
+  }
+
+  &__value {
+    padding-top: 30px;
+  }
+
+  &__email {
+    padding-top: 40px;
+  }
+
+  iframe {
+    margin-bottom: 39px;
+  }
+
+}

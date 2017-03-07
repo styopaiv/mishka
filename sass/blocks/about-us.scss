@@ -1,0 +1,26 @@
+.about-us {
+  margin-bottom: 50px;
+
+  &__container {
+    width: 260px;
+    padding: 0 30px;
+  }
+
+  &__title {
+    font-family: $opensans-b;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__features {
+    width: 250px;
+    padding: 0;
+    list-style: none;
+    font-family: $opensans-b;
+    font-size: 17px;
+  }
+
+  &__feature {
+    padding-top: 80px;
+  }
+}
