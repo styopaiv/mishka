@@ -1,0 +1,27 @@
+.main-nav {
+
+  &__items {
+    position: absolute;
+    left: 0;
+    top: 64px;
+    width: 320px;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    background: #fff;
+  }
+
+  &__item {
+    border-top: solid #ececec 1px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+
+}

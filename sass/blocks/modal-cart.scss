@@ -1,0 +1,68 @@
+.modal-cart {
+  display: none;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 260px;
+    padding: 0 30px;
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__sub-title {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-family: 30px;
+  }
+
+  &__sizes {
+    padding: 0;
+    margin: 0 0 30px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  &__size {
+    margin-right: 7px;
+    padding: 17px 0;
+    width: 80px;
+    text-align: center;
+    border: solid 2px #ececec;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      border: solid 2px $green;
+    }
+  }
+
+  &__button {
+    width: 260px;
+    padding: 15px 0;
+    background: $green;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+  }
+}

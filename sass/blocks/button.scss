@@ -1,0 +1,13 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  padding: 15px 0px;
+  border: 2px solid $swamp;
+  color: $swamp;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}

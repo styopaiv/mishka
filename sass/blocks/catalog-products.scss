@@ -1,0 +1,30 @@
+.catalog-products {
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    width: 200px;
+    padding-left: 27px;
+    color: $swamp;
+  }
+
+  &__title {
+    margin: 15px 0 0;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  &__properties {
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__price {
+    padding: 24px 0 24px 27px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

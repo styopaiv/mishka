@@ -1,0 +1,22 @@
+.page-header {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    right: 30px;
+    border: none;
+    font-size: 0;
+    width: 20px;
+    height: 14px;
+    background: #fff;
+    background-image: url("/img/icon-menu-open.svg");
+    background-size: contain;
+  }
+}

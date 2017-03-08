@@ -1,0 +1,40 @@
+.popular-product {
+  margin-bottom: 70px;
+
+  &__container {
+    width: 260px;
+    padding: 0 30px;
+  }
+
+  &__title {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__sub-title {
+    color: $green;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  &__properties {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &__price {
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+  }
+}

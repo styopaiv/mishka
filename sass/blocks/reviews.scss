@@ -1,0 +1,38 @@
+.reviews {
+  margin-bottom: 90px;
+
+  &__container {
+    width: 260px;
+    padding: 0 30px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__item {
+    margin: 0;
+    margin-bottom: 30px;
+
+    p {
+      width: 260px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+  &__author-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  &__write-review {
+    margin-top: 38px;
+  }
+
+  &__controls {
+
+  }
+
+}

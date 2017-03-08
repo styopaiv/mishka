@@ -1,0 +1,119 @@
+.knitting-form {
+  margin-bottom: 55px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    input[type="text"] {
+      border: none;
+      font-family: $opensans;
+      font-size: 17px;
+      line-height: 18px;
+    }
+
+    textarea {
+      width: 260px;
+      height: 140px;
+      border: 2px solid #000;
+      font-family: $opensans;
+      font-size: 17px;
+      line-height: 18px;
+    }
+  }
+
+  &__title {
+    font-family: $opensans;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    color: $green;
+  }
+
+  &__toggle {
+    margin-bottom: 30px;
+
+    span {
+      font-family: $opensans;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 18px;
+      position: relative;
+      padding-left: 60px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border: 2px solid $swamp;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+
+      &:checked+span::after {
+        position: absolute;
+        content: "";
+        left: 14px;
+        top: 14px;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        background-color: $green;
+      }
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 40px;
+
+    span {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 18px;
+      position: relative;
+      padding-left: 60px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border: 2px solid $swamp;
+      }
+    }
+
+    input[type="checkbox"] {
+      display: none;
+
+      &:checked+span::after {
+        position: absolute;
+        content: "";
+        left: 17px;
+        top: 17px;
+        width: 10px;
+        height: 10px;
+        background: #000;
+      }
+    }
+  }
+
+  &__name {
+    span {
+      display: flex;
+      margin: 15px 0;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 18px;
+    }
+  }
+
+  &__button {
+    background-color: #fff;
+  }
+}
