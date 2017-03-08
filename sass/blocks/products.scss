@@ -8,7 +8,7 @@
       width: 260px;
       padding-top: 80px;
       padding-bottom: 185px;
-      font-family: $opensans-b;
+      font-weight: bold;
       font-size: 27px;
       line-height: 30px;
       text-align: center;
@@ -24,11 +24,11 @@
     line-height: 24px;
 
     &--bright {
-      background: #63d1bb;
+      background: $green;
     }
 
     &--dark {
-      background: #56c3b2;
+      background: $green;
     }
   }
 }

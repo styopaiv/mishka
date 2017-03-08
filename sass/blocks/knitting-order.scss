@@ -7,17 +7,16 @@
   &__title {
     margin: 0;
     padding: 70px 0;
-    font-family: $opensans-b;
+    font-weight: bold;
     font-size: 27px;
     line-height: 30px;
     text-align: center;
-    background: #f1f1f1;
+    background: $grey-bg;
   }
 
   &__descr {
-    font-family: $opensans;
     font-size: 13px;
     line-height: 24px;
-    color: #444444;
+    color: $swamp;
   }
 }

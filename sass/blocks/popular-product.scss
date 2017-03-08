@@ -8,34 +8,32 @@
 
   &__title {
     padding-top: 30px;
-    font-family: $opensans-b;
+    font-weight: bold;
     font-size: 25px;
     line-height: 30px;
   }
 
   &__sub-title {
-    color: #63d1bb;
+    color: $green;
     font-size: 17px;
-    font-family: $opensans-b;
+    font-weight: bold;
     line-height: 16px;
     text-transform: uppercase;
   }
 
   &__descr {
-    font-family: $opensans;
     font-size: 15px;
     line-height: 24px;
   }
 
   &__properties {
-    font-family: $opensans;
     font-size: 15px;
     line-height: 20px;
   }
 
   &__price {
     padding-top: 25px;
-    font-family: $opensans-b;
+    font-weight: bold;
     font-size: 17px;
     line-height: 24px;
   }
