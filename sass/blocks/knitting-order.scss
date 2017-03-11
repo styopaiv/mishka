@@ -1,7 +1,6 @@
 .knitting-order {
   &__container {
-    width: 260px;
-    padding: 0 30px;
+    @include container();
   }
 
   &__title {
@@ -18,5 +17,26 @@
     font-size: 13px;
     line-height: 24px;
     color: $swamp;
+  }
+}
+@media ($tablet-widths) {
+  .knitting-order {
+    &__descr {
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+}
+
+
+@media ($desktop-widths) {
+  .knitting-order {
+    &__descr {
+      width: 700px;
+      padding-left: 175px;
+    }
+    &__container {
+      padding-left: 60px;
+    }
   }
 }

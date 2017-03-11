@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,25 +12,42 @@
     <main class="page-main">
 
       <header class="page-header">
-        <a href="index.html" class="page-header__logo">
+        <a class="page-header__logo">
           <img src="img/logo-mobile.svg" alt="Mishka">
         </a>
         <button class="page-header__toggle" type="button">Открыть меню</button>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
-            <ul class="main-nav__items">
-              <li class="main-nav__item">
+            <ul class="main-nav__moveable">
+              <li class="main-nav__moveable-item">
                 <a href="catalog.html">Кaталог товаров</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__moveable-item">
                 <a href="form.html">Вязание на заказ</a>
               </li>
+            </ul>
+            <ul class="main-nav__items">
               <li class="main-nav__item">
                 <a href="#">Поиск по сайту</a>
               </li>
               <li class="main-nav__item">
                 <a href="#">Корзина: пока пуста</a>
               </li>
+            </ul>
+            <ul class="main-nav__wide">
+              <div class="main-nav__tablet-items">
+                <li class="main-nav__tablet-item">
+                  <a href="#">Бесплатная доставка по России</a>
+                </li>
+              </div>
+              <div class="main-nav__desktop-items">
+                <li class="main-nav__desktop-item">
+                  <a href="#">Новые поступления</a>
+                </li>
+                <li class="main-nav__desktop-item">
+                  <a href="#">Распродажа</a>
+                </li>
+              </div>
             </ul>
           </div>
         </nav>
@@ -50,10 +68,10 @@
                 <span class="catalog-products__properties">
                   Рост 30 см, вес 200г
                 </span>
-              </div>
-              <div class="catalog-products__price">
-                <span>1 200 руб.</span>
-                <a href="#" class="catalog-products__buy-button">В корзину</a>
+                <div class="catalog-products__price">
+                  <span>1 200 руб.</span>
+                  <a href="#" class="catalog-products__buy-button">В корзину</a>
+                </div>
               </div>
             </article>
             <article class="catalog-products__item">
@@ -67,10 +85,10 @@
                 <span class="catalog-products__properties">
                   Диаметр 15 см, высота 10 см
                 </span>
-              </div>
-              <div class="catalog-products__price">
-                <span>690 руб.</span>
-                <a href="#" class="catalog-products__buy-button">В корзину</a>
+                <div class="catalog-products__price">
+                  <span>690 руб.</span>
+                  <a href="#" class="catalog-products__buy-button">В корзину</a>
+                </div>
               </div>
             </article>
             <article class="catalog-products__item">
@@ -84,10 +102,10 @@
                 <span class="catalog-products__properties">
                   Диаметр 30 см, высота 30 см
                 </span>
-              </div>
-              <div class="catalog-products__price">
-                <span>1 500 руб.</span>
-                <a href="#" class="catalog-products__buy-button">В корзину</a>
+                <div class="catalog-products__price">
+                  <span>1 500 руб.</span>
+                  <a href="#" class="catalog-products__buy-button">В корзину</a>
+                </div>
               </div>
             </article>
           </div>
@@ -97,14 +115,14 @@
       <section class="manufacturing">
         <div class="manufacturing__container">
           <div class="manufacturing__process">
-            <h2 class="manufacturing__title">Процесс производства</h2>
             <div class="manufacturing__video">
               <img src="img/video-mobile@1x.jpg" alt="Видео">
             </div>
-            <p class="manufacturing__descr">
-              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-            </p>
-            <a href="#" class="manufacturing__buy-button  button">Сделать заказ</a>
+            <div class="manufacturing__descr">
+              <h2 class="manufacturing__title">Процесс производства</h2>
+              <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <a href="#" class="manufacturing__buy-button  button">Сделать заказ</a>
+            </div>
           </div>
         </div>
       </section>

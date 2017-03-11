@@ -1,10 +1,6 @@
 .about-us {
+  @include container();
   margin-bottom: 50px;
-
-  &__container {
-    width: 260px;
-    padding: 0 30px;
-  }
 
   &__title {
     font-weight: bold;
@@ -14,6 +10,7 @@
 
   &__features {
     width: 250px;
+    margin: 0;
     padding: 0;
     list-style: none;
     font-weight: bold;
@@ -22,5 +19,29 @@
 
   &__feature {
     padding-top: 80px;
+  }
+}
+@media ($tablet-widths) {
+  .about-us {
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__features {
+      width: auto;
+      display: flex;
+    }
+
+    &__wrapper {
+      width: 300px;
+    }
+  }
+}
+@media ($desktop-widths) {
+  .about-us {
+    &__container {
+      padding-left: 175px;
+    }
   }
 }

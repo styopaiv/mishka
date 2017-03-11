@@ -2,8 +2,8 @@
   margin-bottom: 70px;
 
   &__container {
-    width: 260px;
-    padding: 0 30px;
+    @include container();
+    position: relative;
   }
 
   &__title {
@@ -14,6 +14,7 @@
   }
 
   &__sub-title {
+    display: block;
     color: $green;
     font-size: 17px;
     font-weight: bold;
@@ -36,5 +37,96 @@
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
+
+    span {
+      display: block;
+    }
+  }
+}
+@media ($tablet-widths) {
+  .popular-product {
+    position: relative;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+
+    &__info {
+      width: 295px;
+    }
+
+    &__descr {
+      padding-bottom: 30px;
+    }
+
+    &__title {
+      padding: 0;
+      margin: 0;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__sub-title {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__info-wrapper {
+      display: flex;
+    }
+
+    &__header {
+      display: flex;
+    }
+
+    &__sub-title {
+      width: 80px;
+      padding-top: 30px;
+      margin-left: auto;
+      align-self: center;
+      text-align: center;
+    }
+
+    &__price {
+      margin-top: 30px;
+    }
+
+    &__pic {
+      position: absolute;
+      margin-left: auto;
+      right: 0;
+      bottom: 0;
+    }
+
+    &__buy {
+      margin-top: 30px;
+    }
+  }
+}
+@media ($desktop-widths) {
+  .popular-product {
+
+    &__header {
+      padding-left: 40px;
+    }
+
+    &__title {
+      order: 1;
+      margin-left: 50px;
+    }
+
+    &__sub-title {
+      padding: 0;
+      margin-left: 0;
+    }
+
+    &__container {
+    }
+
+    &__info {
+      padding-left: 175px;
+    }
+
+    &__pic {
+    }
   }
 }

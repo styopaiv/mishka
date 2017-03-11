@@ -5,8 +5,10 @@ var plumber = require('gulp-plumber');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var server = require('browser-sync').create();
+var sourcemaps = require('gulp-sourcemaps');
 gulp.task('style', function() {
 	gulp.src('sass/style.scss')
+		.pipe(sourcemaps.init())
 		.pipe(plumber())
 		.pipe(sass())
 		.pipe(postcss([
@@ -16,6 +18,8 @@ gulp.task('style', function() {
 				]
 			})
 		]))
+		.pipe(sass().on('error', sass.logError))
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('css'))
 		.pipe(server.stream());
 });

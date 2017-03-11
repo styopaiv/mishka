@@ -1,27 +1,145 @@
 .main-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   &__items {
     position: absolute;
+    z-index: 100;
     left: 0;
     top: 64px;
-    width: 320px;
+    width: 100%;
     padding: 0;
+    margin: 0;
     list-style: none;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
+    text-align: center;
     background: #fff;
+  }
+
+  &__moveable {
+    position: absolute;
+    z-index: 200;
+    top: 230px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    background: #fff;
+  }
+
+  &__moveable-item {
+    border-top: solid #ececec 1px;
+    padding-top: 30px;
+    padding-bottom: 31px;
   }
 
   &__item {
     border-top: solid #ececec 1px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
+  }
+
+  &__wide {
+    padding: 0;
+    margin: 0;
+    display: none;
+    list-style: none;
   }
 
   &--closed {
     display: none;
   }
+}
+@media ($tablet-widths) {
+  .main-nav {
+    &--closed {
+      display: block;
+    }
 
+    &__item {
+      padding: 0;
+      display: block;
+      border: none;
+    }
 
+    &__items {
+      position: static;
+      display: flex;
+    }
+
+    &__wide {
+      display: flex;
+    }
+
+    &__desktop-items {
+      display: none;
+    }
+
+    &__tablet-items {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      display: block;
+      font-size: 15px;
+    }
+
+    &__moveable {
+      position: absolute;
+      display: flex;
+      top: 80px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      font-size: 15px;
+      font-weight: bold;
+      background: none;
+    }
+
+    &__moveable-item {
+      padding: 0 20px 0 0;
+      border: none;
+    }
+  }
+}
+@media ($desktop-widths) {
+  .main-nav {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__items {
+      margin-left: auto;
+    }
+
+    &__moveable {
+      position: static;
+      margin-right: 250px;
+      font-size: 17px;
+    }
+
+    &__moveable-item {
+      width: 215px;
+      font-weight: bold;
+    }
+
+    &__desktop-items {
+      display: flex;
+      position: absolute;
+      left: 30px;
+      top: 100px;
+      font-weight: bold;
+    }
+
+    &__desktop-item {
+      padding-right: 20px;
+    }
+  }
 }

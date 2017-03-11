@@ -1,7 +1,6 @@
 .catalog {
   &__container {
-    width: 260px;
-    padding: 0 30px;
+    @include container();
   }
 
   &__title {

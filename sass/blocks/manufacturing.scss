@@ -1,15 +1,23 @@
 .manufacturing {
-  &__container {
-    width: 260px;
-    padding: 0 30px;
+  @include container();
+
+  &__container {}
+
+  &__process {
+    position: relative;
+    padding-top: 60px;
   }
 
   &__title {
-    padding-left: 88px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 90px;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
   }
+
 
   &__descr {
     width: 215px;
@@ -17,8 +25,49 @@
   }
 
   &__buy-button {
-    margin: 0 auto;
-    margin-bottom: 95px;
+    margin: 0 auto 95px;
     width: 200px;
+  }
+}
+@media ($tablet-widths) {
+  .manufacturing {
+    &__process {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      position: static;
+    }
+
+    &__descr {
+      margin: 0 auto;
+      width: 584px;
+      padding-left: 0;
+    }
+
+    &__buy-button {
+      width: auto;
+    }
+  }
+}
+@media ($desktop-widths) {
+  .manufacturing {
+    &__container {
+      display: flex;
+    }
+
+    &__video {
+      width: 683px;
+    }
+
+    &__process {
+      flex-direction: row;
+    }
+
+    &__descr {
+      width: 234px;
+      padding-bottom: 105px;
+    }
   }
 }

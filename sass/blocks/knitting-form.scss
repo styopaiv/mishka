@@ -2,9 +2,6 @@
   margin-bottom: 55px;
 
   &__item {
-    display: flex;
-    flex-direction: column;
-
     input[type="text"] {
       border: none;
       font-family: $opensans;
@@ -28,6 +25,14 @@
     font-size: 17px;
     line-height: 16px;
     color: $green;
+  }
+
+  &__wrapper {
+    // display: flex;
+    // flex-direction: column;
+    label {
+      display: block;
+    }
   }
 
   &__toggle {
@@ -115,5 +120,55 @@
 
   &__button {
     background-color: #fff;
+  }
+}
+@media ($tablet-widths) {
+  .knitting-form {
+    position: relative;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+
+    &__title {
+      margin-right: 120px;
+    }
+
+    &__wrapper {
+      &--checkbox {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &__item {
+      flex-direction: row;
+    }
+
+    &__legend {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+@media ($desktop-widths) {
+  .knitting-form {
+    &__title {
+      margin-right: 70px;
+      margin-left: 70px;
+    }
+
+    &__button {
+      margin-left: 175px;
+    }
+
+    &__item {
+      textarea {
+        width: 700px;
+      }
+    }
   }
 }
