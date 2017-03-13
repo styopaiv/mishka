@@ -8,8 +8,8 @@
   &__header-title {
     width: 260px;
     margin: 0 auto;
-    padding-top: 80px;
-    padding-bottom: 185px;
+    padding-top: 66px;
+    padding-bottom: 121px;
     font-weight: bold;
     font-size: 27px;
     line-height: 30px;
@@ -23,10 +23,11 @@
 
   &__item {
     position: relative;
-    padding: 30px;
+    padding: 27px;
     color: #fff;
     font-size: 19px;
     line-height: 24px;
+    font-weight: bold;
 
     &--bright {
       background: $green;
@@ -40,14 +41,14 @@
 @media ($tablet-widths) {
   .products {
     &__header {
+      position: relative;
       background-position: center;
+      margin-bottom: 50px;
     }
 
     &__header-title {
       width: 500px;
-      padding: 0;
-      padding-top: 160px;
-      padding-bottom: 300px;
+      padding: 145px 0 372px;
       font-size: 43px;
       line-height: 50px;
     }
@@ -60,15 +61,19 @@
 
     &__item {
       width: 100%;
+      padding-left: 36px;
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }
 @media ($desktop-widths) {
   .products {
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 
     &__header-title {
       width: 625px;
+      padding-bottom: 356px;
       font-size: 53px;
       line-height: 57px;
     }

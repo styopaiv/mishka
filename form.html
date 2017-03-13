@@ -12,7 +12,7 @@
     <main class="page-main">
 
       <header class="page-header">
-        <a class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <img src="img/logo-mobile.svg" alt="Mishka">
         </a>
         <button class="page-header__toggle" type="button">Открыть меню</button>
@@ -58,8 +58,10 @@
         <div class="knitting-order__container">
           <p class="knitting-order__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
-          <form action="https://echo.htmlacademy.ru" method="post" class="knitting-form">
-            <div class="knitting-form__item">
+        </div>
+        <form action="https://echo.htmlacademy.ru" method="post" class="knitting-form">
+          <div class="knitting-form__container">
+            <div class="knitting-form__item knitting-form__item--type">
               <h2 class="knitting-form__title">Тип</h2>
               <div class="knitting-form__wrapper">
                 <label class="knitting-form__toggle">
@@ -72,42 +74,42 @@
                 </label>
               </div>
             </div>
-            <div class="knitting-form__item  knitting-form__item--color">
+          </div>
+          <div class="knitting-form__item  knitting-form__item--color">
+            <div class="knitting-form__container">
               <h2 class="knitting-form__title">Цвет</h2>
               <div class="knitting-form__wrapper knitting-form__wrapper--checkbox">
-                <div class="knitting-form__checkbox-left">
-                  <label class="knitting-form__checkbox">
-                    <input type="checkbox" name="white" checked>
-                    <span>Белый</span>
-                  </label>
-                  <label class="knitting-form__checkbox">
-                    <input type="checkbox" name="grey" checked>
-                    <span>Серый</span>
-                  </label>
-                  <label class="knitting-form__checkbox">
-                    <input type="checkbox" name="tiffany">
-                    <span>&#171;Тиффани&#187;</span>
-                  </label>
-                </div>
-                <div class="knitting-form__checkbox-right">
-                  <label class="knitting-form__checkbox">
-                    <input type="checkbox" name="black">
-                    <span>Черный</span>
-                  </label>
-                  <label class="knitting-form__checkbox">
-                    <input type="checkbox" name="pink">
-                    <span>Розовый</span>
-                  </label>
-                  <label class="knitting-form__checkbox">
-                    <input type="checkbox" name="orange">
-                    <span>Оранжевый</span>
-                  </label>
-                </div>
+                <label class="knitting-form__checkbox">
+                  <input type="checkbox" name="white" checked>
+                  <span>Белый</span>
+                </label>
+                <label class="knitting-form__checkbox">
+                  <input type="checkbox" name="grey" checked>
+                  <span>Серый</span>
+                </label>
+                <label class="knitting-form__checkbox">
+                  <input type="checkbox" name="tiffany">
+                  <span>&#171;Тиффани&#187;</span>
+                </label>
+                <label class="knitting-form__checkbox">
+                  <input type="checkbox" name="black">
+                  <span>Черный</span>
+                </label>
+                <label class="knitting-form__checkbox">
+                  <input type="checkbox" name="pink">
+                  <span>Розовый</span>
+                </label>
+                <label class="knitting-form__checkbox">
+                  <input type="checkbox" name="orange">
+                  <span>Оранжевый</span>
+                </label>
               </div>
             </div>
+          </div>
+          <div class="knitting-form__container">
             <div class="knitting-form__item  knitting-form__item--name">
               <h2 class="knitting-form__title">ФИО</h2>
-              <div class="knitting-form__wrapper">
+              <div class="knitting-form__wrapper knitting-form__wrapper--name">
                 <label class="knitting-form__name">
                   <span>Имя:</span>
                   <input type="text" name="name" placeholder="Введите ваше имя*">
@@ -122,36 +124,47 @@
                 </label>
               </div>
             </div>
-            <div class="knitting-form__item  knitting-form__item--phone">
+          </div>
+          <div class="knitting-form__item  knitting-form__item--phone">
+            <div class="knitting-form__container">
               <h2 class="knitting-form__title">ТЕЛ</h2>
               <input type="text" name="phone" placeholder="+7 XXX XX XX*">
             </div>
-            <div class="knitting-form__item  knitting-form__item--email">
+          </div>
+          <div class="knitting-form__item  knitting-form__item--email">
+            <div class="knitting-form__container">
               <h2 class="knitting-form__title">E-MAIL</h2>
               <input type="text" name="email" placeholder="Ваш Email*">
             </div>
+          </div>
+          <div class="knitting-form__container">
             <div class="knitting-form__item  knitting-form__item--additional">
               <h2 class="knitting-form__title">ДОП</h2>
               <textarea placeholder="Опишите все ваши желания к заказу"></textarea>
             </div>
+          </div>
+          <div class="knitting-form__container">
             <small class="knitting-form__legend">
               <sup>*</sup>Поля обязательны для заполнения</small>
             <button type="submit" class="knitting-form__button  button">Отправить заказ</button>
-          </form>
-        </div>
+          </div>
+        </form>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social">
+      <div class="page-footer__container">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg">
+        </div>
         <div class="social-links">
-          <a class="social-links__item  social-links__item--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          <a class="social-links__item  social-links__item--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           <a class="social-links__item  social-links__item--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social-links__item  social-links__item--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social-links__item  social-links__item--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
         </div>
         <div class="page-footer__copyright">
-          <span>Разработано:</span>
+          <span>Разработано</span>
           <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>

@@ -3,6 +3,7 @@
   margin-bottom: 50px;
 
   &__title {
+    margin: 0;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
@@ -15,14 +16,17 @@
     list-style: none;
     font-weight: bold;
     font-size: 17px;
+    line-height: 20px;
   }
 
   &__feature {
-    padding-top: 80px;
+    padding-top: 84px;
   }
 }
 @media ($tablet-widths) {
   .about-us {
+    margin-bottom: 87px;
+
     &__title {
       font-size: 43px;
       line-height: 50px;
@@ -31,10 +35,20 @@
     &__features {
       width: auto;
       display: flex;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &__feature {
+      padding-top: 108px;
     }
 
     &__wrapper {
       width: 300px;
+
+      &:first-child {
+        margin-right: 30px;
+      }
     }
   }
 }
@@ -42,6 +56,17 @@
   .about-us {
     &__container {
       padding-left: 175px;
+    }
+
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__wrapper {
+      &:first-child {
+        margin-right: 52px;
+      }
     }
   }
 }

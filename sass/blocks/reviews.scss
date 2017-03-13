@@ -7,6 +7,8 @@
   }
 
   &__title {
+    margin: 0;
+    margin-bottom: 26px;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
@@ -16,6 +18,8 @@
     margin: 0 0 30px;
 
     p {
+      margin: 0;
+      margin-bottom: 26px;
       width: 260px;
       font-size: 15px;
       line-height: 30px;
@@ -27,6 +31,8 @@
     font-size: 18px;
 
     span {
+      display: block;
+      padding-top: 5px;
       font-weight: normal;
     }
   }
@@ -45,16 +51,21 @@
     background-image: url("/img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
+    margin-bottom: 165px;
 
     &__title {
       font-size: 43px;
       line-height: 50px;
-      padding-top: 50px;
+      padding-top: 75px;
+      margin-bottom: 50px;
     }
 
     &__item {
       p {
         width: 650px;
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 58px;
       }
     }
 
@@ -71,7 +82,7 @@
       position: absolute;
       width: 175px;
       height: 50px;
-      top: 0;
+      top: 41px;
       right: 0;
     }
 
@@ -89,6 +100,7 @@
 @media ($desktop-widths) {
   .reviews {
     @include container();
+    margin-bottom: 231px;
 
     &__items {
       padding-left: 175px;
@@ -96,12 +108,18 @@
 
     &__title {
       padding-left: 175px;
+      font-size: 53px;
+      line-height: 57px;
     }
 
     &__item {
       p {
         width: 770px;
+        margin-bottom: 36px;
       }
+    }
+    &__write-review {
+      top: 46px;
     }
   }
 }

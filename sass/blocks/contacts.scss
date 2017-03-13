@@ -7,6 +7,8 @@
   }
 
   &__title {
+    margin: 0;
+    margin-bottom: 25px;
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
@@ -24,6 +26,8 @@
   }
 
   &__items {
+    font-size: 15px;
+    line-height: 30px;
     p {
       margin: 0;
     }
@@ -31,6 +35,7 @@
 
   &__email {
     display: flex;
+    margin-bottom: 30px;
 
     a {
       border-bottom: 1px solid $green;
@@ -60,16 +65,22 @@
   &__write-us {
     width: 260px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 31px;
   }
 }
 @media ($tablet-widths) {
   .contacts {
+    &__container {
+      margin-bottom: 53px;
+    }
     &__items {
       display: flex;
+      font-size: 17px;
+      line-height: 30px;
     }
 
     &__title {
+      margin-bottom: 50px;
       font-size: 43px;
       line-height: 50px;
     }
@@ -78,38 +89,44 @@
       display: flex;
 
       p {
-        width: 200px;
+        width: 225px;
       }
     }
 
     &__email {
-      margin-right: 50px;
+      margin-right: 46px;
     }
 
     iframe {
       width: 100%;
-      height: 400px;
+      height: 460px;
     }
 
     &__write-us {
       width: 230px;
       margin: 0 auto;
-      margin-top: 40px;
+      margin-top: 50px;
     }
   }
 }
 @media ($desktop-widths) {
   .contacts {
     @include container();
-    margin-top: 150px;
     margin-bottom: 115px;
     display: flex;
     position: relative;
 
     &__container {
-      padding-left: 175px;
+      width: 320px;
+      padding-left: 171px;
+      margin-right: 47px;
       display: flex;
       flex-direction: column;
+    }
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+      margin-top: 69px;
     }
 
     &__items {
@@ -119,6 +136,7 @@
 
     &__email {
       margin-bottom: 30px;
+      margin-right: 0;
     }
 
     &__iframe {

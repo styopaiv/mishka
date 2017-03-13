@@ -1,14 +1,13 @@
 .page-header {
   position: relative;
-  // padding-top: 20px;
-  // padding-bottom: 20px;
+  padding: 22px;
   display: flex;
   justify-content: center;
 
   &__toggle {
     position: absolute;
     cursor: pointer;
-    top: 30px;
+    top: 15px;
     right: 30px;
     border: none;
     font-size: 0;

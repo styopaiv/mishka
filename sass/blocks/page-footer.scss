@@ -35,6 +35,7 @@
   .page-footer {
     &__container {
       display: flex;
+      padding-top: 28px;
     }
 
     &__logo {
@@ -47,6 +48,14 @@
     &__copyright {
       width: 185px;
       margin-left: auto;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .page-footer {
+    &__container {
+      padding-top: 20px;
     }
   }
 }

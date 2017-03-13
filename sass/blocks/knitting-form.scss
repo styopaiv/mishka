@@ -1,21 +1,54 @@
 .knitting-form {
   margin-bottom: 55px;
 
+  &__container {
+    @include container();
+    position: relative;
+  }
+
   &__item {
+    &--type {
+      // margin-bottom: 40px;
+    }
+
+    &--color {
+      h2 {
+        margin-top: 40px;
+      }
+    }
+
+    &--name {
+      margin-bottom: 44px;
+    }
+
+    &--phone {
+      margin-bottom: 56px;
+    }
+
+    &--email {
+      margin-bottom: 50px;
+    }
+
+    &--additional {
+      textarea {
+        width: 245px;
+        height: 120px;
+        border: 2px solid #000;
+        margin-top: 9px;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-family: $opensans;
+        font-size: 17px;
+        line-height: 18px;
+      }
+    }
+
     input[type="text"] {
       border: none;
       font-family: $opensans;
       font-size: 17px;
       line-height: 18px;
-    }
-
-    textarea {
-      width: 260px;
-      height: 140px;
-      border: 2px solid #000;
-      font-family: $opensans;
-      font-size: 17px;
-      line-height: 18px;
+      background: none;
     }
   }
 
@@ -25,34 +58,47 @@
     font-size: 17px;
     line-height: 16px;
     color: $green;
+    text-transform: uppercase;
   }
 
   &__wrapper {
-    // display: flex;
-    // flex-direction: column;
+    margin-top: 29px;
+
+    &--checkbox {
+      margin-top: 34px;
+    }
+
     label {
       display: block;
     }
   }
 
   &__toggle {
+    margin-top: 20px;
     margin-bottom: 30px;
 
+    &:first-child {
+      margin-top: 35px;
+    }
+
     span {
+      display: block;
+      width: 160px;
+      position: relative;
+      padding-left: 60px;
       font-family: $opensans;
       font-weight: bold;
       font-size: 17px;
       line-height: 18px;
-      position: relative;
-      padding-left: 60px;
 
       &::before {
         position: absolute;
         content: "";
         left: 0;
+        top: -8px;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         border: 2px solid $swamp;
       }
     }
@@ -63,8 +109,8 @@
       &:checked+span::after {
         position: absolute;
         content: "";
-        left: 14px;
-        top: 14px;
+        left: 12px;
+        top: 3px;
         border-radius: 50%;
         width: 16px;
         height: 16px;
@@ -74,7 +120,7 @@
   }
 
   &__checkbox {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
 
     span {
       font-weight: bold;
@@ -86,9 +132,10 @@
       &::before {
         position: absolute;
         content: "";
+        top: -8px;
         left: 0;
-        width: 40px;
-        height: 40px;
+        width: 38px;
+        height: 38px;
         border: 2px solid $swamp;
       }
     }
@@ -99,8 +146,8 @@
       &:checked+span::after {
         position: absolute;
         content: "";
-        left: 17px;
-        top: 17px;
+        left: 16px;
+        top: 8px;
         width: 10px;
         height: 10px;
         background: #000;
@@ -109,13 +156,26 @@
   }
 
   &__name {
+    margin-bottom: 66px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     span {
-      display: flex;
       margin: 15px 0;
       font-weight: bold;
       font-size: 17px;
       line-height: 18px;
     }
+  }
+
+  &__legend {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 30px;
+    margin-top: 10px;
   }
 
   &__button {
@@ -126,39 +186,194 @@
   .knitting-form {
     position: relative;
 
+    &__container {
+      display: flex;
+    }
+
     &__item {
       display: flex;
-      flex-direction: column;
-      margin-bottom: 50px;
-    }
+      flex-direction: row;
+      // margin-bottom: 50px;
+      &--type {
+        margin-top: 40px;
 
-    &__title {
-      margin-right: 120px;
-    }
+        h2 {
+          margin-right: 150px;
+        }
+      }
 
-    &__wrapper {
-      &--checkbox {
-        display: flex;
-        flex-direction: row;
+      &--color {
+        padding-top: 62px;
+        padding-bottom: 22px;
+        margin-bottom: 54px;
+        background-color: $grey-bg;
+
+        h2 {
+          // margin-left: 50px;
+          // margin: 0 auto;
+        }
+      }
+
+      &--name {
+        margin-bottom: 63px;
+
+        h2 {
+          margin-right: 125px;
+        }
+      }
+
+      &--phone {
+        margin-bottom: 0;
+        padding-bottom: 31px;
+        padding-top: 50px;
+        background-color: $grey-bg;
+      }
+
+      &--email {
+        padding-bottom: 56px;
+        margin-bottom: 55px;
+        background-color: $grey-bg;
+
+        h2 {
+          margin-right: 124px;
+        }
+      }
+
+      &--additional {
+        margin-bottom: 54px;
+
+        h2 {
+          margin-right: 126px;
+        }
+
+        textarea {
+          width: 484px;
+          height: 115px;
+          margin-top: 0;
+        }
       }
     }
 
-    &__item {
-      flex-direction: row;
+    &__title {
+      margin-right: 142px;
+    }
+
+    &__name {
+      margin-bottom: 52px;
+
+      span {
+        font-size: 19px;
+        line-height: 18px;
+        margin-right: 40px;
+      }
+    }
+
+    &__wrapper {
+      margin-top: 0;
+
+      &--checkbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 520px;
+      }
+
+      &--name {
+        padding-top: 10px;
+      }
+    }
+
+    &__checkbox {
+      margin-top: 10px;
+      margin-bottom: 42px;
+
+      &:nth-child(odd) {
+        width: 260px;
+      }
+
+      span {
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 18px;
+        position: relative;
+        padding-left: 60px;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: -12px;
+          left: -20px;
+          width: 50px;
+          height: 50px;
+          border: 2px solid $swamp;
+        }
+      }
+
+      input[type="checkbox"] {
+        display: none;
+
+        &:checked+span::after {
+          position: absolute;
+          content: "";
+          left: 2px;
+          top: 11px;
+          width: 10px;
+          height: 10px;
+          background: #000;
+        }
+      }
+    }
+
+    &__toggle {
+      margin-top: 10px;
+      margin-bottom: 60px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      span {
+        width: 254px;
+        margin-top: 10px;
+        font-size: 19px;
+        line-height: 18px;
+
+        &::before {
+          left: -21px;
+          top: -13px;
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+
+    input[type="radio"] {
+      &:checked+span::after {
+        left: -6px;
+        top: 2px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &__button {
+      width: 230px;
     }
 
     &__legend {
       position: absolute;
-      bottom: 0;
+      bottom: -17px;
       right: 0;
+      font-size: 17px;
+      line-height: 30px;
     }
   }
 }
 @media ($desktop-widths) {
   .knitting-form {
     &__title {
-      margin-right: 70px;
-      margin-left: 70px;
+      margin-right: 100px;
+      margin-left: 58px;
     }
 
     &__button {
@@ -166,9 +381,47 @@
     }
 
     &__item {
-      textarea {
-        width: 700px;
+
+      &--type {
+        h2 {
+          margin-right: 100px;
+        }
       }
+      &--name {
+        h2 {
+          margin-right: 74px;
+        }
+      }
+
+      &--email {
+        h2 {
+          margin-right: 74px;
+        }
+      }
+
+      &--additional {
+          h2 {
+            margin-right: 74px;
+          }
+        textarea {
+          width: 685px;
+        }
+      }
+    }
+
+    &__wrapper {
+      &--checkbox {
+        width: 800px;
+      }
+    }
+    &__checkbox {
+        width: 260px;
+      &:nth-child(odd) {
+        width: 260px;
+      }
+    }
+    &__legend {
+      right: 175px;
     }
   }
 }

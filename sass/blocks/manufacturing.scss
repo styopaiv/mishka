@@ -1,5 +1,6 @@
 .manufacturing {
   @include container();
+  margin-bottom: 100px;
 
   &__container {}
 
@@ -21,12 +22,19 @@
 
   &__descr {
     width: 215px;
-    padding-left: 27px;
+    margin-top: 44px;
+    padding-left: 35px;
+    p {
+      width: 185px;
+      margin-bottom: 26px;
+      font-size: 13px;
+      line-height: 24px;
+    }
   }
 
   &__buy-button {
-    margin: 0 auto 95px;
-    width: 200px;
+    // margin: 0 auto 95px;
+    width: 190px;
   }
 }
 @media ($tablet-widths) {
@@ -34,16 +42,36 @@
     &__process {
       display: flex;
       flex-direction: column;
+      padding-top: 0;
+    }
+
+    &__video {
+      height: 456px;
+      background-color: $grey-bg;
     }
 
     &__title {
       position: static;
+      margin: 0;
+      margin-top: 21px;
+      margin-bottom: 31px;
+      padding-left: 61px;
+      font-size: 20px;
+      line-height: 24px;
     }
 
     &__descr {
       margin: 0 auto;
       width: 584px;
       padding-left: 0;
+      font-size: 15px;
+      line-height: 30px;
+      p {
+        width: 585px;
+        margin-bottom: 37px;
+        font-size: 15px;
+        line-height: 30px;
+      }
     }
 
     &__buy-button {
@@ -53,12 +81,20 @@
 }
 @media ($desktop-widths) {
   .manufacturing {
+    margin-bottom: 79px;
     &__container {
       display: flex;
     }
 
     &__video {
       width: 683px;
+      margin-right: 75px;
+    }
+
+    &__title {
+      padding: 0;
+      padding-top: 5px;
+      margin: 0;
     }
 
     &__process {
@@ -67,7 +103,18 @@
 
     &__descr {
       width: 234px;
+      margin-top: 102px;
       padding-bottom: 105px;
+      p {
+        width: 230px;
+        margin: 0;
+        margin-top: 35px;
+      }
+    }
+
+    &__buy-button {
+      margin-top: 40px;
+      margin-bottom: 0;
     }
   }
 }
