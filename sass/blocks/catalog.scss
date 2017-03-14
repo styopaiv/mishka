@@ -1,17 +1,37 @@
 .catalog {
   &__container {
-    width: 260px;
-    padding: 0 30px;
+    @include container();
   }
 
   &__title {
     margin: 0;
-    padding: 70px 30px;
+    padding: 67px 30px;
+    margin-bottom: 37px;
     background: #f1f1f1;
     text-align: center;
     font-weight: bold;
     font-size: 27px;
     line-height: 30px;
-    margin-bottom: 30px;
   }
+}
+
+@media ($tablet-widths) {
+  .catalog {
+    &__title {
+      padding-top: 85px;
+      font-size: 43px;
+      line-height: 50px;
+      margin-bottom: 87px;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+    .catalog {
+      &__title {
+        font-size: 53px;
+        line-height: 57px;
+        margin-bottom: 164px;
+      }
+    }
 }

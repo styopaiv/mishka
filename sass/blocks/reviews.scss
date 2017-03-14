@@ -2,37 +2,124 @@
   margin-bottom: 90px;
 
   &__container {
-    width: 260px;
-    padding: 0 30px;
+    position: relative;
+    @include container();
   }
 
   &__title {
+    margin: 0;
+    margin-bottom: 26px;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
   }
 
   &__item {
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
 
     p {
+      margin: 0;
+      margin-bottom: 26px;
       width: 260px;
       font-size: 15px;
       line-height: 30px;
     }
   }
+
   &__author-name {
-    font-style: normal;
     font-weight: bold;
     font-size: 18px;
+
+    span {
+      display: block;
+      padding-top: 5px;
+      font-weight: normal;
+    }
   }
+
   &__write-review {
     margin-top: 38px;
   }
 
   &__controls {
-
+    display: flex;
+    background: none;
   }
+}
+@media ($tablet-widths) {
+  .reviews {
+    background-image: url("/img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 165px;
 
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+      padding-top: 75px;
+      margin-bottom: 50px;
+    }
+
+    &__item {
+      p {
+        width: 650px;
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 58px;
+      }
+    }
+
+    &__author-name {
+      display: block;
+      width: 300px;
+    }
+
+    &__items {
+      display: flex;
+    }
+
+    &__write-review {
+      position: absolute;
+      width: 175px;
+      height: 50px;
+      top: 41px;
+      right: 0;
+    }
+
+    &__controls {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      &--prev {
+        right: 100px;
+      }
+    }
+  }
+}
+@media ($desktop-widths) {
+  .reviews {
+    @include container();
+    margin-bottom: 231px;
+
+    &__items {
+      padding-left: 175px;
+    }
+
+    &__title {
+      padding-left: 175px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__item {
+      p {
+        width: 770px;
+        margin-bottom: 36px;
+      }
+    }
+    &__write-review {
+      top: 46px;
+    }
+  }
 }

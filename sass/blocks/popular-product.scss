@@ -2,18 +2,21 @@
   margin-bottom: 70px;
 
   &__container {
-    width: 260px;
-    padding: 0 30px;
+    @include container();
+    position: relative;
   }
 
   &__title {
-    padding-top: 30px;
+    padding-top: 29px;
+    padding-bottom: 9px;
+    margin: 0;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
   }
 
   &__sub-title {
+    display: block;
     color: $green;
     font-size: 17px;
     font-weight: bold;
@@ -22,19 +25,138 @@
   }
 
   &__descr {
+    margin: 0;
     font-size: 15px;
     line-height: 24px;
+    padding-top: 22px;
+    padding-bottom: 28px;
   }
 
   &__properties {
     font-size: 15px;
     line-height: 20px;
+    margin-bottom: 18px;
+
+    tr {
+      display: flex;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__property {
+    display: block;
+    width: 97px;
   }
 
   &__price {
-    padding-top: 25px;
+    margin-top: 20px;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
+
+    span {
+      display: block;
+      margin-bottom: 26px;
+      text-align: center;
+    }
+  }
+}
+@media ($tablet-widths) {
+  .popular-product {
+    position: relative;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+
+    &__info {
+      width: 295px;
+    }
+
+    &__title {
+      padding: 0;
+      margin: 0 0 27px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__descr {
+      padding-bottom: 30px;
+      margin-bottom: 15px;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__info-wrapper {
+      display: flex;
+    }
+
+    &__header {
+      display: flex;
+    }
+
+    &__sub-title {
+      padding-top: 0;
+      width: 122px;
+      margin-top: -18px;
+      margin-left: auto;
+      align-self: center;
+      text-align: center;
+    }
+
+    &__price {
+      margin-top: 47px;
+      font-size: 20px;
+      line-height: 24px;
+      span {
+        margin-bottom: 35px;
+      }
+    }
+
+    &__pic {
+      position: absolute;
+      margin-left: auto;
+      right: 0;
+      bottom: 0;
+    }
+
+    &__buy {
+      width: 290px;
+      margin-top: 30px;
+    }
+  }
+}
+@media ($desktop-widths) {
+  .popular-product {
+    margin-bottom: 157px;
+    &__header {
+      position: absolute;
+      left: 24px;
+    }
+
+    &__title {
+      order: 1;
+      margin-left: 26px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__sub-title {
+      padding: 0;
+      margin-left: 0;
+    }
+
+    &__info {
+      padding-left: 175px;
+    }
+    &__descr {
+      margin-top: 83px;
+      margin-bottom: 27px;
+    }
+
+    &__price {
+      margin-top: 100px;
+    }
+
+    &__pic {}
   }
 }

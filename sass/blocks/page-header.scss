@@ -1,15 +1,13 @@
 .page-header {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  position: relative;
+  padding: 22px;
   display: flex;
   justify-content: center;
 
   &__toggle {
     position: absolute;
     cursor: pointer;
-    top: 30px;
+    top: 15px;
     right: 30px;
     border: none;
     font-size: 0;
@@ -18,5 +16,27 @@
     background: #fff;
     background-image: url("/img/icon-menu-open.svg");
     background-size: contain;
+  }
+}
+
+@media ($tablet-widths) {
+    .page-header {
+      @include container();
+      &__logo {
+        margin-right: auto;
+      }
+      &__toggle {
+        display: none;
+      }
+    }
+}
+
+@media ($desktop-widths) {
+  .page-header {
+    justify-content: space-between;
+    &__logo {
+      position: absolute;
+      left: 45%;
+    }
   }
 }
