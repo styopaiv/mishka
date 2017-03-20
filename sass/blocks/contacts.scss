@@ -39,6 +39,12 @@
 
     a {
       border-bottom: 1px solid $green;
+      &:hover {
+        color: $green;
+      }
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     span {
@@ -70,6 +76,7 @@
 }
 @media ($tablet-widths) {
   .contacts {
+    margin-bottom: 53px;
     &__container {
       margin-bottom: 53px;
     }

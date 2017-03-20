@@ -23,7 +23,9 @@
 
   &__item {
     position: relative;
-    padding: 27px;
+    padding: 0 27px;
+    padding-top: 27px;
+    padding-bottom: 27px;
     color: #fff;
     font-size: 19px;
     line-height: 24px;
@@ -31,10 +33,18 @@
 
     &--bright {
       background: $green;
+      &:hover {
+        padding-top: 22px;
+        padding-bottom: 37px;
+      }
     }
 
     &--dark {
       background: $dark-green;
+      &:hover {
+        padding-top: 22px;
+        padding-bottom: 37px;
+      }
     }
   }
 }
@@ -69,10 +79,11 @@
 }
 @media ($desktop-widths) {
   .products {
-    margin-bottom: 130px;
+    margin-bottom: 131px;
 
     &__header-title {
       width: 625px;
+      padding-top: 165px;
       padding-bottom: 356px;
       font-size: 53px;
       line-height: 57px;

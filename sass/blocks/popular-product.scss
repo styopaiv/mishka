@@ -3,6 +3,7 @@
 
   &__container {
     @include container();
+    // width: 100%;
     position: relative;
   }
 
@@ -92,13 +93,13 @@
 
     &__header {
       display: flex;
+      justify-content: space-between;
     }
 
     &__sub-title {
       padding-top: 0;
-      width: 122px;
+      width: 74px;
       margin-top: -18px;
-      margin-left: auto;
       align-self: center;
       text-align: center;
     }
@@ -107,6 +108,7 @@
       margin-top: 47px;
       font-size: 20px;
       line-height: 24px;
+
       span {
         margin-bottom: 35px;
       }
@@ -128,14 +130,15 @@
 @media ($desktop-widths) {
   .popular-product {
     margin-bottom: 157px;
+
     &__header {
       position: absolute;
-      left: 24px;
+      left: 47px;
     }
 
     &__title {
       order: 1;
-      margin-left: 26px;
+      margin-left: 48px;
       font-size: 53px;
       line-height: 57px;
     }
@@ -148,6 +151,7 @@
     &__info {
       padding-left: 175px;
     }
+
     &__descr {
       margin-top: 83px;
       margin-bottom: 27px;
