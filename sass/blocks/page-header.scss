@@ -2,28 +2,21 @@
   position: relative;
   padding: 22px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 
-  &__toggle {
-    position: absolute;
-    cursor: pointer;
-    top: 15px;
-    right: 30px;
-    border: none;
-    font-size: 0;
-    width: 20px;
-    height: 14px;
-    background: #fff;
-    background-image: url("/img/icon-menu-open.svg");
-    background-size: contain;
+  &__logo {
+    margin: 0 auto;
   }
 }
 
 @media ($tablet-widths) {
     .page-header {
       @include container();
+      flex-direction: row;
       &__logo {
-        margin-right: auto;
+        margin: 0;
+        // margin-right: auto;
       }
       &__toggle {
         display: none;
