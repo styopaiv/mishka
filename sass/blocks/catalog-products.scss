@@ -1,11 +1,15 @@
 .catalog-products {
-  margin-bottom: 70px;
+  margin-bottom: 42px;
 
   &__item {
-    margin-bottom: 59px;
+    margin-bottom: 30px;
+    border: 1px solid $grey;
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
+    min-height: 152px;
     margin-top: 20px;
     padding-left: 27px;
     color: $swamp;
@@ -21,17 +25,27 @@
 
 
   &__properties {
-    display: block;
-    margin-bottom: 42px;
+    position: relative;
+    margin-bottom: 41px;
     font-size: 13px;
     line-height: 30px;
   }
 
   &__price {
+    position: relative;
     display: flex;
+    padding-bottom: 27px;
     font-weight: bold;
     font-size: 15px;
     line-height: 24px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: -21px;
+      height: 1px;
+      width: 200px;
+      background-color: $grey;
+    }
   }
 
   &__buy-button {
@@ -44,6 +58,7 @@
 }
 @media ($tablet-widths) {
   .catalog-products {
+    margin-bottom: 63px;
     &__item {
       display: flex;
       margin-bottom: 47px;
@@ -52,8 +67,10 @@
     &__info {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       width: 280px;
-      padding-left: 23px;
+      min-height: 334px;
+      padding-left: 26px;
       margin-top: 0;
     }
 
@@ -69,15 +86,19 @@
     }
 
     &__properties {
+      margin-bottom: 0;
       font-size: 15px;
       line-height: 30px;
     }
 
     &__price {
-      margin-top: 160px;
       padding-left: 6px;
       font-size: 17px;
       line-height: 24px;
+      &::before {
+        bottom: -176px;;
+        width: 275px;
+      }
     }
   }
 }
@@ -97,6 +118,7 @@
     }
 
     &__title {
+      margin-bottom: 0;
       padding-top: 22px;
     }
 
@@ -107,14 +129,21 @@
       }
     }
 
+    &__properties {
+      margin-bottom: 0px;
+    }
+
     &__info {
-      // min-height: 200px;
+      box-sizing: border-box;
+      justify-content: space-between;
+      min-height: 190px;
       padding-left: 25px;
     }
 
     &__price {
       padding-left: 0;
-      margin-top: 17px;
+      margin-top: 0px;
+      padding-bottom: 30px;
     }
   }
 }

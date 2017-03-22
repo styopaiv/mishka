@@ -1,12 +1,15 @@
 .manufacturing {
   @include container();
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
-  &__container {}
+  &__container {
+    border: 1px solid $grey;
+    padding-bottom: 32px;
+  }
 
   &__process {
     position: relative;
-    padding-top: 60px;
+    padding-top: 84px;
   }
 
   &__title {
@@ -22,7 +25,7 @@
 
   &__descr {
     width: 215px;
-    margin-top: 44px;
+    margin-top: 21px;
     padding-left: 35px;
     p {
       width: 185px;
@@ -33,12 +36,14 @@
   }
 
   &__buy-button {
-    // margin: 0 auto 95px;
     width: 190px;
   }
 }
 @media ($tablet-widths) {
   .manufacturing {
+    &__container {
+      padding-bottom: 47px;
+    }
     &__process {
       display: flex;
       flex-direction: column;
@@ -81,7 +86,7 @@
 }
 @media ($desktop-widths) {
   .manufacturing {
-    margin-bottom: 79px;
+    margin-bottom: 25px;
     &__container {
       display: flex;
     }
