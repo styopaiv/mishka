@@ -7,30 +7,30 @@ var autoprefixer = require('autoprefixer');
 var server = require('browser-sync').create();
 var sourcemaps = require('gulp-sourcemaps');
 gulp.task('style', function() {
-	gulp.src('sass/style.scss')
-		.pipe(sourcemaps.init())
-		.pipe(plumber())
-		.pipe(sass())
-		.pipe(postcss([
-			autoprefixer({
-				browsers: [
-					'last 2 versions'
-				]
-			})
-		]))
-		.pipe(sass().on('error', sass.logError))
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('css'))
-		.pipe(server.stream());
+  gulp.src('sass/style.scss')
+    .pipe(sourcemaps.init())
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer({
+        browsers: [
+          'last 2 versions'
+        ]
+      })
+    ]))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('css'))
+    .pipe(server.stream());
 });
 gulp.task('serve', ['style'], function() {
-	server.init({
-		server: '.',
-		notify: false,
-		open: true,
-		cors: true,
-		ui: false
-	});
-	gulp.watch('sass/**/*.{scss,sass}', ['style']);
-	gulp.watch('*.html').on('change', server.reload);
+  server.init({
+    server: '.',
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+  gulp.watch('sass/**/*.{scss,sass}', ['style']);
+  gulp.watch('*.html').on('change', server.reload);
 });

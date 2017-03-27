@@ -16,7 +16,8 @@
   "scripts": {
     "test": "editorconfig-cli",
     "build": "gulp style",
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "sprite": "gulp sprites"
   },
   "editorconfig-cli": [
     "*.html",

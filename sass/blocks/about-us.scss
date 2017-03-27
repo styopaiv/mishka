@@ -20,7 +20,14 @@
   }
 
   &__feature {
+    position: relative;
     padding-top: 84px;
+  }
+
+  &__icon-feature {
+    position: absolute;
+    top: 30px;
+    fill: $green;
   }
 }
 @media ($tablet-widths) {
@@ -49,6 +56,11 @@
       &:first-child {
         margin-right: 30px;
       }
+    }
+
+    &__icon-feature {
+      top: 50px;
+      left: 6px;
     }
   }
 }

@@ -22,6 +22,17 @@
     line-height: 24px;
   }
 
+  &__icon-video {
+    position: absolute;
+    top: 17px;
+    left: 33px;
+    fill: $green;
+  }
+
+  &__icon-play {
+    position: absolute;
+    top: 122px;
+  }
 
   &__descr {
     width: 215px;
@@ -43,6 +54,12 @@
   .manufacturing {
     &__container {
       padding-bottom: 47px;
+      &:hover {
+        box-shadow: 0px 8px 14px 3px rgba(0,0,0,0.1);
+      }
+      &:active {
+          box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.1);
+      }
     }
     &__process {
       display: flex;
@@ -51,6 +68,7 @@
     }
 
     &__video {
+      position: relative;
       height: 456px;
       background-color: $grey-bg;
     }
@@ -79,6 +97,25 @@
       }
     }
 
+    &__icon-video {
+      left: 39px;
+      top: 473px;
+    }
+    &__icon-play {
+      left: 43%;
+      top: 40%;
+      fill: $green;
+      &:hover {
+        width: 120px;
+        height: 90px;
+      }
+      &:active {
+        opacity: 0.3;
+        width: 90px;
+        height: 70px;
+      }
+    }
+
     &__buy-button {
       width: auto;
     }
@@ -92,6 +129,7 @@
     }
 
     &__video {
+      position: relative;
       width: 683px;
       margin-right: 75px;
     }
@@ -103,10 +141,21 @@
     }
 
     &__process {
+      position: relative;
       flex-direction: row;
     }
 
+    &__icon-video {
+      z-index: 50;
+      left: 757px;
+      top: 50px;
+    }
+    &__icon-play {
+      top: 200px;
+    }
+
     &__descr {
+
       width: 234px;
       margin-top: 102px;
       padding-bottom: 105px;

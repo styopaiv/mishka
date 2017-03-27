@@ -7,26 +7,30 @@
   }
 
   &__item {
+
     &--type {
-      // margin-bottom: 40px;
+
     }
 
     &--color {
       h2 {
-        margin-top: 40px;
+        margin-top: 10px;
       }
     }
 
     &--name {
-      margin-bottom: 52px;
+      margin-bottom: 28px;
     }
 
     &--phone {
-      margin-bottom: 56px;
+      margin-bottom: 35px;
     }
 
     &--email {
-      margin-bottom: 50px;
+      margin-bottom: 31px;
+      h2::before {
+          width: 180px;
+      }
     }
 
     &--additional {
@@ -40,16 +44,15 @@
         font-family: $opensans;
         font-size: 17px;
         line-height: 18px;
+        &:hover {
+          border: 2px solid $green;
+        }
+        &:focus {
+          border: 2px solid $green;
+        }
       }
     }
 
-    input[type="text"] {
-      border: none;
-      font-family: $opensans;
-      font-size: 17px;
-      line-height: 18px;
-      background: none;
-    }
   }
 
   &__title {
@@ -59,26 +62,39 @@
     line-height: 16px;
     color: $green;
     text-transform: uppercase;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 0;
+      height: 2px;
+      width: 200px;
+      background: $green;
+    }
   }
 
   &__wrapper {
-    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
 
     &--checkbox {
       margin-top: 34px;
     }
 
     label {
-      display: block;
+      display: flex;
+      flex-direction: column;
     }
   }
 
   &__toggle {
-    margin-top: 20px;
+    // margin-top: 20px;
     margin-bottom: 30px;
+    cursor: pointer;
 
     &:first-child {
-      margin-top: 35px;
+      margin-top: 8px;
     }
 
     span {
@@ -102,6 +118,16 @@
         border: 2px solid $swamp;
       }
     }
+    span:hover {
+      &:before {
+          border: 2px solid $green;
+      }
+    }
+    span:active {
+      &:before {
+          border: 2px solid $grey;
+      }
+    }
 
     input[type="radio"] {
       display: none;
@@ -117,10 +143,12 @@
         background-color: $green;
       }
     }
+
   }
 
   &__checkbox {
-    margin-bottom: 37px;
+    margin-bottom: 42px;
+    cursor: pointer;
 
     span {
       font-weight: bold;
@@ -139,6 +167,16 @@
         border: 2px solid $swamp;
       }
     }
+    span:hover {
+      &:before {
+          border: 2px solid $green;
+      }
+    }
+    span:active {
+      &:before {
+          border: 2px solid $grey;
+      }
+    }
 
     input[type="checkbox"] {
       display: none;
@@ -146,19 +184,19 @@
       &:checked+span::after {
         position: absolute;
         content: "";
-        left: 16px;
-        top: 8px;
-        width: 10px;
-        height: 10px;
-        background: #000;
+        left: 11px;
+        top: 0px;
+        width: 23px;
+        height: 23px;
+        background: url(../img/icon-tick.svg) no-repeat 50% 50%;
       }
     }
   }
 
   &__name {
-    margin-bottom: 64px;
+    margin-bottom: 8px;
     &:nth-child(2) {
-      margin-bottom: 48px;
+      margin-bottom: 9px;
     }
     &:last-child {
       margin-bottom: 0;
@@ -170,7 +208,69 @@
       font-size: 17px;
       line-height: 18px;
     }
+
+    input[type="text"] {
+      padding-bottom: 15px;
+      border: none;
+      font-family: $opensans;
+      font-size: 17px;
+      line-height: 18px;
+      background: none;
+      border-bottom: 2px solid #000;
+      &:hover {
+        border-bottom: 2px solid $green;
+      }
+      &:focus {
+        border-bottom: 2px solid $green;
+      }
+    }
   }
+
+  input[name="phone"] {
+    padding-bottom: 24px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    &:hover {
+      border-bottom: 2px solid $green;
+    }
+    &:focus {
+      border-bottom: 2px solid $green;
+    }
+  }
+
+  input[name="email"] {
+    padding-bottom: 19px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    &:hover {
+      border-bottom: 2px solid $green;
+    }
+    &:focus {
+      border-bottom: 2px solid $green;
+    }
+  }
+
+  &__icon-phone {
+    position: absolute;
+    top: 36px;
+    right: 8px;
+    opacity: 0.2;
+    &:hover {
+      fill: $green;
+    }
+  }
+  &__icon-mail {
+    position: absolute;
+    top: 30px;
+    right: 4px;
+    opacity: 0.2;
+    &:hover {
+      fill: $green;
+    }
+  }
+
 
   &__legend {
     display: block;
@@ -231,11 +331,12 @@
 
       &--email {
         padding-bottom: 56px;
-        margin-bottom: 55px;
+        margin-bottom: 40px;
         background-color: $grey-bg;
 
         h2 {
-          margin-right: 124px;
+          width: 100px;
+          margin-right: 100px;
         }
       }
 
@@ -255,13 +356,23 @@
     }
 
     &__title {
+      position: relative;
       margin-right: 142px;
+      &::before {
+        display: none;
+      }
     }
 
     &__name {
-      margin-bottom: 52px;
+      margin-bottom: 25px;
+      display: flex;
+      flex-direction: row;
 
+      &:nth-child(2) {
+        margin-bottom: 25px;
+      }
       span {
+        display: block;
         font-size: 19px;
         line-height: 18px;
         margin-right: 40px;
@@ -279,8 +390,46 @@
       }
 
       &--name {
-        padding-top: 10px;
+        // padding-top: 10px;
+        label {
+          flex-direction: row;
+        }
+        input {
+          padding-top: 15px;
+        }
       }
+    }
+
+    input[name="name"] {
+      width: 410px;
+      &:hover {
+
+      }
+    }
+    input[name="surname"] {
+      width: 360px;
+    }
+
+    input[name="patronymic"] {
+      width: 360px;
+    }
+
+    input[name="phone"] {
+      background: $grey-bg;
+    }
+
+    input[name="email"] {
+      background: $grey-bg;
+    }
+
+    &__icon-phone {
+      top: 8px;
+      right: 20px;
+    }
+
+    &__icon-mail {
+      top: 5px;
+      right: 20px;
     }
 
     &__checkbox {
@@ -313,13 +462,7 @@
         display: none;
 
         &:checked+span::after {
-          position: absolute;
-          content: "";
-          left: 2px;
-          top: 11px;
-          width: 10px;
-          height: 10px;
-          background: #000;
+          left: -2px;
         }
       }
     }
@@ -372,8 +515,13 @@
 @media ($desktop-widths) {
   .knitting-form {
     &__title {
-      margin-right: 100px;
+      margin-right: 90px;
       margin-left: 58px;
+    }
+    &__name {
+      input[type="text"] {
+        width: 100%;
+      }
     }
 
     &__button {
@@ -387,6 +535,9 @@
           margin-right: 100px;
         }
       }
+      &--color {
+        padding-top: 55px;
+      }
       &--name {
         h2 {
           margin-right: 74px;
@@ -395,7 +546,7 @@
 
       &--email {
         h2 {
-          margin-right: 74px;
+          margin-right: 25px;
         }
       }
 
@@ -413,6 +564,17 @@
       &--checkbox {
         width: 800px;
       }
+      &--name {
+        width: 700px;
+      }
+    }
+
+    input[name="phone"] {
+      width: 685px;
+    }
+
+    input[name="email"] {
+      width: 685px;
     }
     &__checkbox {
         width: 260px;
