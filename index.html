@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+    <svg width="0" height="0" style="position:absolute">
 
       <symbol id="bg-zigzag-fill" viewBox="0 0 1150 34">
         <path
@@ -191,57 +191,51 @@
     </svg>
 
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="Mishka">
-        </picture>
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__moveable">
-            <li class="main-nav__moveable-item">
-              <a href="catalog.html">Кaталог товаров</a>
+      <nav class="main-nav">
+        <div class="main-nav__top">
+          <a href="index.html" class="main-nav__logo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+              <img src="../img/logo-mobile.svg" alt="Mishka">
+            </picture>
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+            Меню</button>
+        </div>
+        <ul class="main-nav__items  main-nav__items--closed">
+            <li class="main-nav__item  main-nav__item--catalog">
+              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
             </li>
-            <li class="main-nav__moveable-item">
-              <a href="form.html">Вязание на заказ</a>
+            <li class="main-nav__item  main-nav__item--order">
+              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
             </li>
-          </ul>
-          <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--search">
-              <a href="#">
-                <svg class="main-nav__icon-search" width="17.6" height="17.6">
+            <li class="main-nav__item  main-nav__item--search">
+              <a href="#" class="main-nav__link">
+                <svg class="main-nav__icon main-nav__icon--search" width="18" height="18">
                   <use xlink:href="#icon-search"></use>
                 </svg>
-                Поиск по сайту</a>
+                Поиск по сайту
+              </a>
             </li>
-            <li class="main-nav__item main-nav__item--cart">
-
-              <a href="#">
-                <svg class="main-nav__icon-cart" width="20.294" height="18.849">
+            <li class="main-nav__item  main-nav__item--cart">
+              <a href="#" class="main-nav__link">
+                <svg class="main-nav__icon main-nav__icon--cart" width="21" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-                Корзина: пока пуста</a>
+                Корзина: пока пуста
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--new">
+              <a href="#" class="main-nav__link">Новые поступления</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--sale">
+              <a href="#" class="main-nav__link">Распродажа</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--shipping">
+              <span>Бесплатная доставка по России</span>
             </li>
           </ul>
-          <ul class="main-nav__wide">
-            <div class="main-nav__tablet-items">
-              <li class="main-nav__tablet-item">
-                <a href="#">Бесплатная доставка по России</a>
-              </li>
-            </div>
-            <div class="main-nav__desktop-items">
-              <li class="main-nav__desktop-item">
-                <a href="#">Новые поступления</a>
-              </li>
-              <li class="main-nav__desktop-item">
-                <a href="#">Распродажа</a>
-              </li>
-            </div>
-          </ul>
-        </div>
       </nav>
     </header>
 
@@ -293,9 +287,9 @@
               </tr>
             </table>
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@1x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
-              <img class="popular-product__pic" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Корзинка">
+              <source media="(min-width: 1150px)" srcset="../img/triple-set-desktop@1x.jpg, ../img/triple-set-desktop@1x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../img/triple-set-tablet@1x.jpg, ../img/triple-set-tablet@2x.jpg 2x">
+              <img class="popular-product__pic" src="../img/triple-set-mobile@1x.jpg" srcset="../img/triple-set-mobile@2x.jpg 2x" alt="Корзинка">
             </picture>
             <div class="popular-product__price">
               <span>Цена: 990 руб.</span>
@@ -356,13 +350,29 @@
         <div class="reviews__container">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__items">
-            <blockquote class="reviews__item slider-item">
-              <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярный инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-              </p>
-              <cite class="reviews__author-name">Анастасия Красильникова
-                <span>@misssssiskras</span>
-              </cite>
-            </blockquote>
+            <div class="reviews__slides">
+              <blockquote class="reviews__item reviews__slider-item">
+                <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярный инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                </p>
+                <cite class="reviews__author-name">Анастасия Красильникова
+                  <span>@misssssiskras</span>
+                </cite>
+              </blockquote>
+              <!-- <blockquote class="reviews__item reviews__slider-item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quas? Fugit suscipit, accusamus dolores debitis quibusdam nemo fugiat. Quibusdam culpa reprehenderit architecto incidunt aliquam vitae, quia voluptatibus, nam tempora laborum!
+                </p>
+                <cite class="reviews__author-name">Jane Doe
+                  <span>@nickname</span>
+                </cite>
+              </blockquote>
+              <blockquote class="reviews__item reviews__slider-item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eum saepe illum dignissimos voluptates accusamus reiciendis! Quos cumque labore saepe dolores repudiandae reiciendis, minus! Architecto suscipit, perferendis unde velit magni.
+                </p>
+                <cite class="reviews__author-name">John Doe
+                  <span>@nickname</span>
+                </cite>
+              </blockquote> -->
+            </div>
             <div class="reviews__controls">
               <button class="reviews__controls reviews__controls--prev" type="button">
                 <svg class="reviews__controls--icon-prev" width="50" height="26.003">
@@ -402,7 +412,7 @@
             </div>
           </div>
         </div>
-        <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZtPRR40" width="320" height="457" frameborder="0"></iframe>
+        <div class="contacts__map" id="map"></div>
         <a href="#" class="contacts__write-us  button">Напишите нам</a>
       </section>
 
@@ -459,7 +469,7 @@
         <button class="modal-cart__button" type="button">Добавить</button>
       </div>
     </div>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY7aP80u5MA_BOSSh0D_PfmZxsKXPxqJc&signed_in=true&callback=initMap" async defer></script>
     <script src="js/app.js"></script>
 
   </body>

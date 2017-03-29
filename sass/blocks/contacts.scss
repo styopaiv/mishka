@@ -68,7 +68,7 @@
     }
   }
 
-  iframe {
+  &__map {
     width: 100%;
   }
 
@@ -116,7 +116,7 @@
       margin-right: 46px;
     }
 
-    iframe {
+    &__map {
       width: 100%;
       height: 460px;
     }
@@ -163,7 +163,7 @@
       margin-right: 0;
     }
 
-    &__iframe {
+    &__map {
       width: 525px;
       height: 464px;
     }

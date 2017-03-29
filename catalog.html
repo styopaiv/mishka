@@ -192,56 +192,51 @@
     <main class="page-main">
 
       <header class="page-header">
-        <a href="index.html" class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Mishka">
-          </picture>
-        </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__moveable">
-              <li class="main-nav__moveable-item">
-                <a href="catalog.html">Кaталог товаров</a>
+        <nav class="main-nav">
+          <div class="main-nav__top">
+            <a href="index.html" class="main-nav__logo">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+                <img src="../img/logo-mobile.svg" alt="Mishka">
+              </picture>
+            </a>
+            <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+              Меню</button>
+          </div>
+          <ul class="main-nav__items  main-nav__items--closed">
+              <li class="main-nav__item  main-nav__item--catalog">
+                <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
               </li>
-              <li class="main-nav__moveable-item">
-                <a href="form.html">Вязание на заказ</a>
+              <li class="main-nav__item  main-nav__item--order">
+                <a href="form.html" class="main-nav__link">Вязание на заказ</a>
               </li>
-            </ul>
-            <ul class="main-nav__items">
-              <li class="main-nav__item main-nav__item--search">
-                <a href="#">
-                  <svg class="main-nav__icon-search" width="17.6" height="17.6">
+              <li class="main-nav__item  main-nav__item--search">
+                <a href="#" class="main-nav__link">
+                  <svg class="main-nav__icon main-nav__icon--search" width="18" height="18">
                     <use xlink:href="#icon-search"></use>
                   </svg>
-                  Поиск по сайту</a>
+                  Поиск по сайту
+                </a>
               </li>
-              <li class="main-nav__item main-nav__item--cart">
-                <a href="#">
-                  <svg class="main-nav__icon-cart" width="20.294" height="18.849">
+              <li class="main-nav__item  main-nav__item--cart">
+                <a href="#" class="main-nav__link">
+                  <svg class="main-nav__icon main-nav__icon--cart" width="21" height="19">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                  Корзина: пока пуста</a>
+                  Корзина: пока пуста
+                </a>
+              </li>
+              <li class="main-nav__item  main-nav__item--new">
+                <a href="#" class="main-nav__link">Новые поступления</a>
+              </li>
+              <li class="main-nav__item  main-nav__item--sale">
+                <a href="#" class="main-nav__link">Распродажа</a>
+              </li>
+              <li class="main-nav__item  main-nav__item--shipping">
+                <span>Бесплатная доставка по России</span>
               </li>
             </ul>
-            <ul class="main-nav__wide">
-              <div class="main-nav__tablet-items">
-                <li class="main-nav__tablet-item">
-                  <a href="#">Бесплатная доставка по России</a>
-                </li>
-              </div>
-              <div class="main-nav__desktop-items">
-                <li class="main-nav__desktop-item">
-                  <a href="#">Новые поступления</a>
-                </li>
-                <li class="main-nav__desktop-item">
-                  <a href="#">Распродажа</a>
-                </li>
-              </div>
-            </ul>
-          </div>
         </nav>
       </header>
 
@@ -345,9 +340,7 @@
               <use xlink:href="#icon-video"></use>
             </svg>
             <div class="manufacturing__video">
-              <svg class="manufacturing__icon-play" width="100" height="76.89">
-                <use xlink:href="#icon-play"></use>
-              </svg>
+              <a href="#" class="manufacturing__icon-play"></a>
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
