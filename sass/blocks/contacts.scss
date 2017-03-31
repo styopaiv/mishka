@@ -14,6 +14,10 @@
     line-height: 30px;
   }
 
+  &__icon-flag {
+    display: none;
+  }
+
   &__field {
     width: 75px;
     padding-top: 30px;
@@ -64,7 +68,7 @@
     }
   }
 
-  iframe {
+  &__map {
     width: 100%;
   }
 
@@ -78,6 +82,7 @@
   .contacts {
     margin-bottom: 53px;
     &__container {
+      position: relative;
       margin-bottom: 53px;
     }
     &__items {
@@ -92,6 +97,13 @@
       line-height: 50px;
     }
 
+    &__icon-flag {
+      display: block;
+      position: absolute;
+      top: -15px;
+      right: 0;
+    }
+
     &__adress {
       display: flex;
 
@@ -104,7 +116,7 @@
       margin-right: 46px;
     }
 
-    iframe {
+    &__map {
       width: 100%;
       height: 460px;
     }
@@ -136,6 +148,11 @@
       margin-top: 69px;
     }
 
+    &__icon-flag {
+      top: 60px;
+      left: 67px;
+    }
+
     &__items {
       display: flex;
       flex-direction: column;
@@ -146,7 +163,7 @@
       margin-right: 0;
     }
 
-    &__iframe {
+    &__map {
       width: 525px;
       height: 464px;
     }

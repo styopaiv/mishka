@@ -3,7 +3,6 @@
 
   &__container {
     @include container();
-    // width: 100%;
     position: relative;
   }
 
@@ -68,6 +67,22 @@
     margin-bottom: 120px;
     display: flex;
     flex-direction: column;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -73px;
+      height: 22px;
+      width: 100%;
+      background: url("/img/bg-zigzag-line.svg");
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1254px;
+      height: 22px;
+      width: 100%;
+      background: url("/img/bg-zigzag-line.svg");
+    }
 
     &__info {
       width: 295px;
@@ -99,6 +114,7 @@
     &__sub-title {
       padding-top: 0;
       width: 74px;
+      margin-right: 24px;
       margin-top: -18px;
       align-self: center;
       text-align: center;
@@ -130,6 +146,12 @@
 @media ($desktop-widths) {
   .popular-product {
     margin-bottom: 157px;
+    &::before {
+      bottom: -98px;
+    }
+    &::after {
+      bottom: -1309px;
+    }
 
     &__header {
       position: absolute;
@@ -137,8 +159,9 @@
     }
 
     &__title {
+      z-index: 2;
       order: 1;
-      margin-left: 48px;
+      margin-left: 27px;
       font-size: 53px;
       line-height: 57px;
     }
@@ -161,6 +184,8 @@
       margin-top: 100px;
     }
 
-    &__pic {}
+    &__pic {
+      width: 520px;
+    }
   }
 }

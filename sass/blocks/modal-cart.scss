@@ -1,17 +1,24 @@
 .modal-cart {
   display: none;
-
+  position: fixed;
+  top: 30%;
+  width: 320px;
+  z-index: 200;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 14px 8px rgba(0,0,0,0.2);
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 260px;
-    padding: 0 30px;
+    width: 200px;
+    padding: 30px 30px;
   }
 
   &__title {
-    margin: 0 auto;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
     width: 150px;
     font-weight: bold;
     font-size: 25px;
@@ -20,8 +27,7 @@
 
   &__sub-title {
     display: block;
-    margin: 0 auto;
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
     font-size: 15px;
     font-family: 30px;
   }
@@ -38,6 +44,14 @@
     line-height: 16px;
   }
 
+  input[name="size"] {
+    display: none;
+
+    &:checked+label {
+      border: solid 2px $green;
+    }
+  }
+
   &__size {
     margin-right: 7px;
     padding: 17px 0;
@@ -45,12 +59,12 @@
     text-align: center;
     border: solid 2px #ececec;
 
-    &:last-child {
-      margin-right: 0;
+    &:hover {
+      border: solid 2px $dark-grey;
     }
 
-    &--active {
-      border: solid 2px $green;
+    &:last-child {
+      margin-right: 0;
     }
   }
 
@@ -64,5 +78,49 @@
     font-weight: bold;
     font-size: 17px;
     line-height: 16px;
+  }
+
+  &__overlay {
+    display: none;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.8;
+  }
+
+  &--show {
+    display: block;
+  }
+}
+
+@media ($tablet-widths) {
+  .modal-cart {
+    width: 570px;
+    &__container {
+      width: 570px;
+      padding: 50px 0;
+
+    }
+    &__title {
+      width: 350px;
+      text-align: center;
+    }
+
+    &__sizes {
+      width: 350px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    &__size {
+      width: 113px;
+    }
+    &__button {
+      margin: 0 auto;
+      width: 350px;
+    }
   }
 }
