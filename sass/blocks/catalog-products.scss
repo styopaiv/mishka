@@ -55,6 +55,9 @@
     width: 20px;
     height: 20px;
     opacity: 0.2;
+    &:hover {
+      opacity: 1;
+    }
   }
 
 }
@@ -111,10 +114,8 @@
     }
 
     &__icon-cart {
-      opacity: 1;
       &:hover {
-        opacity: 1;
-        fill: $green;
+        fill: $dark-green;
       }
       &:active {
         opacity: 0.3;
