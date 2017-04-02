@@ -27,14 +27,11 @@
 
   &__item {
     position: relative;
-    padding: 0 27px;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    padding: 27px;
     color: #fff;
     font-size: 19px;
     line-height: 24px;
     font-weight: bold;
-
 
     &--bright {
       background: $green;
@@ -51,6 +48,7 @@
     bottom: 16px;
     opacity: 0.5;
   }
+
   &__icon-toy {
     position: absolute;
     right: 27px;
@@ -61,23 +59,24 @@
 @media ($tablet-widths) {
   .products {
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
       z-index: 100;
-      bottom: 0px;
+      bottom: 0;
       height: 20px;
       width: 100%;
       background-repeat: repeat-x;
       display: block;
       background: url("../img/bg-zigzag-fill.svg");
     }
+
     &__header {
       position: relative;
       margin-bottom: 50px;
       background: url("../img/hero-desktop@1x.jpg") 50% 50% no-repeat;
     }
-
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background: url("../img/hero-desktop@2x.jpg") 50% 50% no-repeat;
     }
@@ -101,16 +100,19 @@
       padding-left: 36px;
       font-size: 20px;
       line-height: 30px;
+
       &:hover {
         margin-top: 0;
         padding-top: 25px;
         padding-bottom: 32px;
       }
     }
+
     &__icon-interior {
       right: 35px;
       bottom: 24px;
     }
+
     &__icon-toy {
       right: 32px;
       bottom: 25px;
@@ -120,6 +122,7 @@
 @media ($desktop-widths) {
   .products {
     margin-bottom: 123px;
+
     &::before {
       bottom: -12px;
       height: 34px;

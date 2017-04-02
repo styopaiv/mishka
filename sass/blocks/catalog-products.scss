@@ -16,13 +16,11 @@
   }
 
   &__title {
-    margin: 0;
-    margin-bottom: 5px;
+    margin: 0 0 5px;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
   }
-
 
   &__properties {
     position: relative;
@@ -39,9 +37,10 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 24px;
+
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       top: -21px;
       height: 1px;
       width: 200px;
@@ -55,23 +54,26 @@
     width: 20px;
     height: 20px;
     opacity: 0.2;
+
     &:hover {
       opacity: 1;
     }
   }
-
 }
 @media ($tablet-widths) {
   .catalog-products {
     margin-bottom: 63px;
+
     &__item {
       display: flex;
       margin-bottom: 47px;
+
       &:hover {
-        box-shadow: 0px 8px 14px 3px rgba(0,0,0,0.1);
+        box-shadow: 0 8px 14px 3px rgba(0,0,0,0.1);
       }
+
       &:active {
-          box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.1);
+        box-shadow: 0 8px 14px -4px rgba(0,0,0,0.1);
       }
     }
 
@@ -107,8 +109,9 @@
       padding-left: 6px;
       font-size: 17px;
       line-height: 24px;
+
       &::before {
-        bottom: -176px;;
+        bottom: -176px;
         width: 275px;
       }
     }
@@ -117,6 +120,7 @@
       &:hover {
         fill: $dark-green;
       }
+
       &:active {
         opacity: 0.3;
       }
@@ -151,7 +155,7 @@
     }
 
     &__properties {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
 
     &__info {
@@ -163,7 +167,7 @@
 
     &__price {
       padding-left: 0;
-      margin-top: 0px;
+      margin-top: 0;
       padding-bottom: 20px;
     }
 

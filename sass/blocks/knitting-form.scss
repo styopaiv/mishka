@@ -13,6 +13,7 @@
 
     &--name {
       margin-bottom: 28px;
+
       h2 {
         margin-bottom: 0;
       }
@@ -20,6 +21,7 @@
 
     &--phone {
       margin-bottom: 35px;
+
       h2 {
         margin-bottom: 19px;
       }
@@ -27,6 +29,7 @@
 
     &--email {
       margin-bottom: 31px;
+
       h2 {
         margin-bottom: 13px;
       }
@@ -40,6 +43,7 @@
       h2 {
         margin-bottom: 16px;
       }
+
       textarea {
         width: 245px;
         height: 120px;
@@ -64,8 +68,7 @@
   }
 
   &__title {
-    margin: 0;
-    margin-bottom: 33px;
+    margin: 0 0 33px;
     font-family: $opensans;
     font-weight: bold;
     font-size: 17px;
@@ -98,7 +101,6 @@
       flex-direction: column;
     }
   }
-
 
   &__toggle {
     margin-bottom: 30px;
@@ -336,6 +338,7 @@
         margin-bottom: 45px;
         margin-top: 20px;
         background-color: $grey-bg;
+
         h2 {
           margin-right: 35px;
         }
@@ -343,6 +346,7 @@
 
       &--name {
         margin-bottom: 63px;
+
         h2 {
           margin-top: 15px;
         }
@@ -353,6 +357,7 @@
         padding-bottom: 34px;
         padding-top: 50px;
         background-color: $grey-bg;
+
         h2 {
           margin-right: 40px;
         }
@@ -362,6 +367,7 @@
         padding-bottom: 56px;
         margin-bottom: 45px;
         background-color: $grey-bg;
+
         h2 {
           margin-right: 40px;
         }
@@ -369,9 +375,11 @@
 
       &--additional {
         margin-bottom: 54px;
+
         h2 {
           margin-top: 17px;
         }
+
         textarea {
           width: 484px;
           height: 115px;
@@ -461,7 +469,7 @@
     }
 
     &__checkbox {
-      margin-top: 0px;
+      margin-top: 0;
       margin-bottom: 56px;
 
       &:nth-child(odd) {
@@ -496,8 +504,7 @@
     }
 
     &__toggle {
-      margin: 0;
-      margin-bottom: 30px;
+      margin: 0 0 30px;
 
       &:first-child {
         margin-top: 0;
@@ -544,9 +551,10 @@
 @media ($desktop-widths) {
   .knitting-form {
     margin-bottom: 60px;
+
     &__title {
-    padding-left: 63px;
-    width: 115px;
+      padding-left: 63px;
+      width: 115px;
     }
 
     &__name {
@@ -560,12 +568,11 @@
     }
 
     &__item {
-      &--type {
-
-      }
+      &--type {}
 
       &--color {
         padding-top: 55px;
+
         h2 {
           margin-right: 20px;
         }
@@ -573,17 +580,19 @@
 
       &--name {
         h2 {
-          margin-right: 0px;
+          margin-right: 0;
         }
       }
+
       &--phone {
         h2 {
-          margin-right: 0px;
+          margin-right: 0;
         }
       }
+
       &--email {
         h2 {
-          margin-right: 0px;
+          margin-right: 0;
         }
       }
 

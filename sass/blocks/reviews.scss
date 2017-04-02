@@ -7,8 +7,7 @@
   }
 
   &__title {
-    margin: 0;
-    margin-bottom: 26px;
+    margin: 0 0 26px;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
@@ -18,8 +17,7 @@
     margin: 0 0 30px;
 
     p {
-      margin: 0;
-      margin-bottom: 26px;
+      margin: 0 0 26px;
       width: 260px;
       font-size: 15px;
       line-height: 30px;
@@ -46,7 +44,6 @@
     overflow: hidden;
   }
 
-
   &__controls {
     position: relative;
     display: flex;
@@ -56,22 +53,28 @@
     outline: none;
     border: 1px solid $grey;
     font-size: 0;
+
     &--icon-prev {
       position: absolute;
       left: 36px;
+
       &:hover {
         opacity: 0.6;
       }
+
       &:active {
         opacity: 0.3;
       }
     }
+
     &--icon-next {
       position: absolute;
       right: 40px;
+
       &:hover {
         opacity: 0.6;
       }
+
       &:active {
         opacity: 0.3;
       }
@@ -98,6 +101,7 @@
 
     &__item {
       margin-right: 18px;
+
       p {
         width: 650px;
         font-size: 17px;
@@ -130,14 +134,17 @@
       bottom: 0;
       border: none;
       outline: none;
+
       &--icon-prev {
         left: 0;
         top: -12px;
       }
+
       &--icon-next {
         top: -12px;
         right: 15px;
       }
+
       &--prev {
         right: 100px;
       }
@@ -161,11 +168,13 @@
 
     &__item {
       margin-right: 107px;
+
       p {
         width: 770px;
         margin-bottom: 36px;
       }
     }
+
     &__write-review {
       top: 46px;
     }

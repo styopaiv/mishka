@@ -67,6 +67,7 @@
     margin-bottom: 120px;
     display: flex;
     flex-direction: column;
+
     &::before {
       content: "";
       position: absolute;
@@ -75,6 +76,7 @@
       width: 100%;
       background: url("/img/bg-zigzag-line.svg");
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -146,9 +148,11 @@
 @media ($desktop-widths) {
   .popular-product {
     margin-bottom: 157px;
+
     &::before {
       bottom: -98px;
     }
+
     &::after {
       bottom: -1309px;
     }
